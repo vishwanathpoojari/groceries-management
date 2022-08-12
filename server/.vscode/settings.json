@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/79e933a6-a647-40c1-9adb-8d6c6378ccd7/microsoft.web/sites/subscriptions/79e933a6-a647-40c1-9adb-8d6c6378ccd7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ecomsite",
+    "appService.deploySubpath": "Login_Express_App-master"
+}

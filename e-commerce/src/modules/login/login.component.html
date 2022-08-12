@@ -1,0 +1,45 @@
+<mat-card>
+    <mat-card-content>
+      <div class="header">
+        <P>Sign IN </P>
+      </div>
+      <form (ngSubmit)="onLogin()" [formGroup]="loginForm" >
+        <div class="emailInput">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Enter E-mail</mat-label>
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Enter email address" required
+            />
+            <!-- <mat-error *ngIf="!loginForm.controls['email'].valid">
+                Email is required
+              </mat-error> -->
+          </mat-form-field>
+          <br>
+          <!-- <a class="text-link" class="aLink" routerLink="">Send OTP</a> -->
+          <!-- <span>OR</span> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Enter password</mat-label>
+            <input
+              formControlName="password"
+              matInput
+              placeholder="Enter password" required
+            />
+            <!-- <mat-error *ngIf="!loginForm.controls['email'].valid">
+                Email is required
+              </mat-error> -->
+          </mat-form-field>
+          <!-- <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Send OTP</a> -->
+        </div>
+        <div>
+            <button mat-flat-button color="primary" class="space-between">Login</button>
+            <button mat-flat-button color="white">Cancel</button>
+        </div>
+      </form>
+
+      <!-- <div class="button-row">
+        <p>Create New Account</p>
+      </div> -->
+    </mat-card-content>
+  </mat-card>
