@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
+  toggleChatbox:boolean = false
+  showbot:boolean = false;
+
+  ngOnInit(): void {
+    let item = localStorage.getItem('showchatbot')
+    if(item == 'true'){
+      this.showbot = true;
+    }
+  }
+
+  toggleChatbot(){
+    this.toggleChatbox = !this.toggleChatbox
+  }
 }

@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
       this.http.post('https://ecomsite.azurewebsites.net/route/login',json, {observe: 'response'}).subscribe((resp:any)=>{
           if(resp.status == 200){
             this.router.navigateByUrl('/home');
+            localStorage.setItem('showchatbot','true')
           }
       })
     }

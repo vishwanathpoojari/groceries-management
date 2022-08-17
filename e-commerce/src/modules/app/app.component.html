@@ -1,1 +1,9 @@
 <router-outlet></router-outlet>
+<div class="adjust-chatbot">
+    <app-chatbox *ngIf=toggleChatbox></app-chatbox>
+</div>
+<div class="align-div-bottom" >
+  <span class="material-symbols-outlined icon-adjust" (click)="toggleChatbot()">
+    <img class="image-css" src="../../assets/icons/bot-icon.png">
+  </span>
+</div>
